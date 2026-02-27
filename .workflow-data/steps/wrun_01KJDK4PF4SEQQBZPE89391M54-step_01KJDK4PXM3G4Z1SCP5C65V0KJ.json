@@ -1,0 +1,20 @@
+{
+  "runId": "wrun_01KJDK4PF4SEQQBZPE89391M54",
+  "stepId": "step_01KJDK4PXM3G4Z1SCP5C65V0KJ",
+  "stepName": "step//./src/message//sendToDiscord",
+  "status": "completed",
+  "input": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bFt7ImFyZ3MiOjEsImNsb3N1cmVWYXJzIjotMSwidGhpc1ZhbCI6LTF9LFsyLDMsNCw1XSwiaHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTQ3NjYyMzgxNzQ4Mzg3ODQwMS9tbjVMWWk0ZTl3SWNua0k2R3RSNGtWLVIwMHhZZjk5b2VkVXVLVTRSSVVWamMzcDVEejlwUUdkSHVMbXNvdGh0eUw3ViIsIk5hdmFsIFJhdmlrYW50IiwiSSBkb250IGhhdmUgYW55IHBsYW5zIGZvciB0b21vcnJvdywgd2hhdCBzaG91bGQgSSBkbyIsIkZyZWUgdGltZSBpcyBsZXZlcmFnZSB3YWl0aW5nIHRvIGJlIGRlcGxveWVkLlxuXG5CbG9jayB0aHJlZSBob3VycyBmb3Igb25lIGhpZ2gtdmFsdWUgc2tpbGw6IHdyaXRpbmcsIGNvZGluZywgb3Igc2FsZXMuIE5vIHBob25lLCBubyBkaXN0cmFjdGlvbnMuXG5cblRha2UgYSBzaWxlbnQgd2FsayB1bnRpbCB5b3VyIG1pbmQgZGVsaXZlcnMgb25lIHJlYWwgcHJvYmxlbSB3b3J0aCBzb2x2aW5nLlxuXG5SZWFkIG9uZSBjaGFwdGVyIG9mIGEgdGltZWxlc3MgYm9vayB3aXRoIGEgcGVuLiBFeHRyYWN0IG9uZSBwcmluY2lwbGUgeW91IGNhbiB1c2UgdG9kYXkuXG5cbk1lc3NhZ2Ugb25lIHBlcnNvbiB5b3UgYWRtaXJlIHdpdGggYSBzcGVjaWZpYyBxdWVzdGlvbi4gTGlzdGVuLlxuXG5CdWlsZCBvbmUgdGlueSB0aGluZyB0aGF0IGNvbXBvdW5kc+KAlGEgaGFiaXQsIGEgcmVsYXRpb25zaGlwLCBhbiBpZGVhLiJd"
+  },
+  "attempt": 1,
+  "startedAt": "2026-02-26T18:26:21.741Z",
+  "createdAt": "2026-02-26T18:26:21.413Z",
+  "updatedAt": "2026-02-26T18:26:22.365Z",
+  "specVersion": 2,
+  "output": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bC0x"
+  },
+  "completedAt": "2026-02-26T18:26:22.365Z"
+}

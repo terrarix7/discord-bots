@@ -1,0 +1,20 @@
+{
+  "runId": "wrun_01KJDJ1GJ2EB3BGP1F9PEYF358",
+  "stepId": "step_01KJDJ1GVNJJFTHWB7AC8R3T8H",
+  "stepName": "step//./src/message//sendDiscordHello",
+  "status": "completed",
+  "input": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bFt7ImFyZ3MiOjEsImNsb3N1cmVWYXJzIjotMSwidGhpc1ZhbCI6LTF9LFtdXQ=="
+  },
+  "attempt": 1,
+  "startedAt": "2026-02-26T18:06:12.385Z",
+  "createdAt": "2026-02-26T18:06:12.076Z",
+  "updatedAt": "2026-02-26T18:06:13.061Z",
+  "specVersion": 2,
+  "output": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bC0x"
+  },
+  "completedAt": "2026-02-26T18:06:13.061Z"
+}

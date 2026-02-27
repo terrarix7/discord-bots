@@ -1,0 +1,15 @@
+{
+  "eventType": "step_created",
+  "specVersion": 2,
+  "correlationId": "step_01KJDK3005GHG5D8H0NG8ZB234",
+  "eventData": {
+    "stepName": "step//./src/message//generateReply",
+    "input": {
+      "__type": "Uint8Array",
+      "data": "ZGV2bFt7ImFyZ3MiOjEsImNsb3N1cmVWYXJzIjotMSwidGhpc1ZhbCI6LTF9LFsyLDMsNF0sIkkgZG9udCBoYXZlIGFueSBwbGFucyBmb3IgdG9tb3Jyb3csIHdoYXQgc2hvdWxkIEkgZG8iLCJTdGV2ZSBKb2JzIiwicHJvZHVjdC1taW5kZWQsIHRhc3RlLW9yaWVudGVkLCBmb2N1c2VkIG9uIHNpbXBsaWNpdHksIGNyYWZ0LCBhbmQgbWVhbmluZ2Z1bCBleHBlcmllbmNlcyJd"
+    }
+  },
+  "runId": "wrun_01KJDK2ZQJG38E81YFQ54A23YX",
+  "eventId": "evnt_01KJDK45TS0S01XCY639P2TYDX",
+  "createdAt": "2026-02-26T18:24:37.209Z"
+}

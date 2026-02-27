@@ -1,0 +1,12 @@
+{
+  "eventType": "step_retrying",
+  "specVersion": 2,
+  "correlationId": "step_01KJDJW9MGN7ZG6M0A0HS17YNM",
+  "eventData": {
+    "error": "Missing OPENROUTER_API_KEY",
+    "stack": "Error: Missing OPENROUTER_API_KEY\n    at generateReply (file:///Users/codetorso/Desktop/discord-bot/node_modules/.nitro/workflow/steps.mjs:100:11)\n    at file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/runtime/step-handler.js:261:37\n    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)\n    at file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/runtime/step-handler.js:244:49\n    at trace (file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/telemetry.js:75:22)\n    at async file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/runtime/step-handler.js:243:26\n    at async trace (file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/telemetry.js:75:16)\n    at async file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/runtime/step-handler.js:30:12\n    at async file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/world-local/dist/queue.js:163:32\n    at async file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/runtime/helpers.js:268:16"
+  },
+  "runId": "wrun_01KJDJW9D5B6D2H6H36X1BXCTW",
+  "eventId": "evnt_01KJDJX4CTKYWFDRAKASMXG3BA",
+  "createdAt": "2026-02-26T18:20:46.362Z"
+}

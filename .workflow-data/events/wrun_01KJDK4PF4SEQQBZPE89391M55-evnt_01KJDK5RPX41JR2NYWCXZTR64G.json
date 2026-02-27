@@ -1,0 +1,14 @@
+{
+  "eventType": "step_completed",
+  "specVersion": 2,
+  "correlationId": "step_01KJDK4PP3E4A509918XXJYJC4",
+  "eventData": {
+    "result": {
+      "__type": "Uint8Array",
+      "data": "ZGV2bFsiVGltZSBpcyB0aGUgdWx0aW1hdGUgY3VycmVuY3kuIFNwZW5kIDQgaG91cnMgbGVhcm5pbmcgUHl0aG9uIGJhc2ljcyBvbiBhdXRvbWF0aW9uIC0gaWYgeW91IHNhdmUgMTAgbWludXRlcyBkYWlseSwgdGhhdCdzIGEgNjB4IHJldHVybiBvbiB0aW1lIGluIG9uZSB5ZWFyLiBJZGVudGlmeSBvbmUgcGh5c2ljYWwgb2JqZWN0IGluIHlvdXIgaG9tZSBhbmQgcmV2ZXJzZS1lbmdpbmVlciBpdHMgZGVzaWduOiBza2V0Y2ggdGhlIENBRCwgdW5kZXJzdGFuZCB0aGUgbWFudWZhY3R1cmluZyBjb25zdHJhaW50cy4gRXhlY3V0ZSBib3RoIGJlZm9yZSBtaWRuaWdodC4gRnV0dXJlIHlvdSBuZWVkcyB0aGUgY29tcG91bmRpbmcgYWR2YW50YWdlLiJd"
+    }
+  },
+  "runId": "wrun_01KJDK4PF4SEQQBZPE89391M55",
+  "eventId": "evnt_01KJDK5RPX41JR2NYWCXZTR64G",
+  "createdAt": "2026-02-26T18:25:29.309Z"
+}

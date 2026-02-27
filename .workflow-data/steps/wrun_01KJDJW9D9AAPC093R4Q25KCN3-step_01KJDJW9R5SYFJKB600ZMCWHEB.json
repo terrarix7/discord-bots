@@ -1,0 +1,20 @@
+{
+  "runId": "wrun_01KJDJW9D9AAPC093R4Q25KCN3",
+  "stepId": "step_01KJDJW9R5SYFJKB600ZMCWHEB",
+  "stepName": "step//./src/message//generateReply",
+  "status": "failed",
+  "input": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bFt7ImFyZ3MiOjEsImNsb3N1cmVWYXJzIjotMSwidGhpc1ZhbCI6LTF9LFsyLDMsNF0sIkkgZG9udCBoYXZlIGFueSBwbGFucyBmb3IgdG9tb3Jyb3csIHdoYXQgc2hvdWxkIEkgZG8iLCJFbG9uIE11c2siLCJjb25jaXNlLCBmaXJzdC1wcmluY2lwbGVzLCBlbmdpbmVlcmluZy1oZWF2eSwgZnV0dXJlLWZvY3VzZWQsIG9jY2FzaW9uYWxseSBib2xkIGNsYWltcyJd"
+  },
+  "error": {
+    "message": "Step \"step//./src/message//generateReply\" failed after 3 retries: Missing OPENROUTER_API_KEY",
+    "stack": "Error: Missing OPENROUTER_API_KEY\n    at generateReply (file:///Users/codetorso/Desktop/discord-bot/node_modules/.nitro/workflow/steps.mjs:100:11)\n    at file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/runtime/step-handler.js:261:37\n    at AsyncLocalStorage.run (node:internal/async_local_storage/async_context_frame:63:14)\n    at file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/runtime/step-handler.js:244:49\n    at trace (file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/telemetry.js:75:22)\n    at async file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/runtime/step-handler.js:243:26\n    at async trace (file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/telemetry.js:75:16)\n    at async file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/runtime/step-handler.js:30:12\n    at async file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/world-local/dist/queue.js:163:32\n    at async file:///Users/codetorso/Desktop/discord-bot/node_modules/@workflow/core/dist/runtime/helpers.js:268:16"
+  },
+  "attempt": 4,
+  "startedAt": "2026-02-26T18:20:31.166Z",
+  "createdAt": "2026-02-26T18:20:30.847Z",
+  "updatedAt": "2026-02-26T18:20:34.723Z",
+  "specVersion": 2,
+  "completedAt": "2026-02-26T18:20:34.723Z"
+}

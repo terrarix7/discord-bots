@@ -1,0 +1,14 @@
+{
+  "eventType": "step_completed",
+  "specVersion": 2,
+  "correlationId": "step_01KJDK4PXM3G4Z1SCP5C65V0KH",
+  "eventData": {
+    "result": {
+      "__type": "Uint8Array",
+      "data": "ZGV2bFsiRnJlZSB0aW1lIGlzIGxldmVyYWdlIHdhaXRpbmcgdG8gYmUgZGVwbG95ZWQuXG5cbkJsb2NrIHRocmVlIGhvdXJzIGZvciBvbmUgaGlnaC12YWx1ZSBza2lsbDogd3JpdGluZywgY29kaW5nLCBvciBzYWxlcy4gTm8gcGhvbmUsIG5vIGRpc3RyYWN0aW9ucy5cblxuVGFrZSBhIHNpbGVudCB3YWxrIHVudGlsIHlvdXIgbWluZCBkZWxpdmVycyBvbmUgcmVhbCBwcm9ibGVtIHdvcnRoIHNvbHZpbmcuXG5cblJlYWQgb25lIGNoYXB0ZXIgb2YgYSB0aW1lbGVzcyBib29rIHdpdGggYSBwZW4uIEV4dHJhY3Qgb25lIHByaW5jaXBsZSB5b3UgY2FuIHVzZSB0b2RheS5cblxuTWVzc2FnZSBvbmUgcGVyc29uIHlvdSBhZG1pcmUgd2l0aCBhIHNwZWNpZmljIHF1ZXN0aW9uLiBMaXN0ZW4uXG5cbkJ1aWxkIG9uZSB0aW55IHRoaW5nIHRoYXQgY29tcG91bmRz4oCUYSBoYWJpdCwgYSByZWxhdGlvbnNoaXAsIGFuIGlkZWEuIl0="
+    }
+  },
+  "runId": "wrun_01KJDK4PF4SEQQBZPE89391M54",
+  "eventId": "evnt_01KJDK7B6MFTNRZ5MKA135VF5A",
+  "createdAt": "2026-02-26T18:26:21.012Z"
+}

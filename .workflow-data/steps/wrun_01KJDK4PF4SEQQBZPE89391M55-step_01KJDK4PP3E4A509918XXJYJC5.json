@@ -1,0 +1,20 @@
+{
+  "runId": "wrun_01KJDK4PF4SEQQBZPE89391M55",
+  "stepId": "step_01KJDK4PP3E4A509918XXJYJC5",
+  "stepName": "step//./src/message//sendToDiscord",
+  "status": "completed",
+  "input": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bFt7ImFyZ3MiOjEsImNsb3N1cmVWYXJzIjotMSwidGhpc1ZhbCI6LTF9LFsyLDMsNCw1XSwiaHR0cHM6Ly9kaXNjb3JkLmNvbS9hcGkvd2ViaG9va3MvMTQ3NjYyMzgwNzg1NzgxOTc3My9BS2JUVXRuemp5NTY0OWlGdWVjUWw0cGthYy1uNmM0RnBCQzhCWWU4YmV5MkdUckpCUWxwZzN2Q3lvODlYSUJ6a2YwYyIsIkVsb24gTXVzayIsIkkgZG9udCBoYXZlIGFueSBwbGFucyBmb3IgdG9tb3Jyb3csIHdoYXQgc2hvdWxkIEkgZG8iLCJUaW1lIGlzIHRoZSB1bHRpbWF0ZSBjdXJyZW5jeS4gU3BlbmQgNCBob3VycyBsZWFybmluZyBQeXRob24gYmFzaWNzIG9uIGF1dG9tYXRpb24gLSBpZiB5b3Ugc2F2ZSAxMCBtaW51dGVzIGRhaWx5LCB0aGF0J3MgYSA2MHggcmV0dXJuIG9uIHRpbWUgaW4gb25lIHllYXIuIElkZW50aWZ5IG9uZSBwaHlzaWNhbCBvYmplY3QgaW4geW91ciBob21lIGFuZCByZXZlcnNlLWVuZ2luZWVyIGl0cyBkZXNpZ246IHNrZXRjaCB0aGUgQ0FELCB1bmRlcnN0YW5kIHRoZSBtYW51ZmFjdHVyaW5nIGNvbnN0cmFpbnRzLiBFeGVjdXRlIGJvdGggYmVmb3JlIG1pZG5pZ2h0LiBGdXR1cmUgeW91IG5lZWRzIHRoZSBjb21wb3VuZGluZyBhZHZhbnRhZ2UuIl0="
+  },
+  "attempt": 1,
+  "startedAt": "2026-02-26T18:25:29.952Z",
+  "createdAt": "2026-02-26T18:25:29.649Z",
+  "updatedAt": "2026-02-26T18:25:31.251Z",
+  "specVersion": 2,
+  "output": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bC0x"
+  },
+  "completedAt": "2026-02-26T18:25:31.251Z"
+}

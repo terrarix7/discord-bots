@@ -1,0 +1,23 @@
+{
+  "runId": "wrun_01KJDK4PF4SEQQBZPE89391M54",
+  "deploymentId": "dpl_local@4.1.0-beta.34",
+  "workflowName": "workflow//./src/message//handleDiscordMessage",
+  "specVersion": 2,
+  "executionContext": {
+    "traceCarrier": {},
+    "workflowCoreVersion": "4.1.0-beta.60"
+  },
+  "input": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bFtbMSwyXSwiSSBkb250IGhhdmUgYW55IHBsYW5zIGZvciB0b21vcnJvdywgd2hhdCBzaG91bGQgSSBkbyIsIm5hdmFsIl0="
+  },
+  "createdAt": "2026-02-26T18:24:54.244Z",
+  "startedAt": "2026-02-26T18:24:54.708Z",
+  "status": "completed",
+  "output": {
+    "__type": "Uint8Array",
+    "data": "ZGV2bFt7InN0YXR1cyI6MSwicGVyc29uYWxpdHkiOjJ9LCJzZW50IiwibmF2YWwiXQ=="
+  },
+  "completedAt": "2026-02-26T18:26:22.694Z",
+  "updatedAt": "2026-02-26T18:26:22.694Z"
+}

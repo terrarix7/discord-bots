@@ -1,0 +1,19 @@
+{
+  "eventType": "run_created",
+  "specVersion": 2,
+  "eventData": {
+    "deploymentId": "dpl_local@4.1.0-beta.34",
+    "workflowName": "workflow//./src/message//handleDiscordMessage",
+    "input": {
+      "__type": "Uint8Array",
+      "data": "ZGV2bFtbMSwyXSwiSSBkb250IGhhdmUgYW55IHBsYW5zIGZvciB0b21vcnJvdywgd2hhdCBzaG91bGQgSSBkbyIsImpvYnMiXQ=="
+    },
+    "executionContext": {
+      "traceCarrier": {},
+      "workflowCoreVersion": "4.1.0-beta.60"
+    }
+  },
+  "runId": "wrun_01KJDK2ZQJG38E81YFQ54A23YX",
+  "eventId": "evnt_01KJDK2ZQV6B453KNJ215D6KCB",
+  "createdAt": "2026-02-26T18:23:58.203Z"
+}

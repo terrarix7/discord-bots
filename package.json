@@ -1,0 +1,21 @@
+{
+  "name": "discord-bot",
+  "type": "module",
+  "scripts": {
+    "dev": "nitro dev",
+    "build": "nitro build",
+    "register:discord-command": "tsx scripts/register-discord-command.ts"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1.19.9",
+    "hono": "^4.12.3",
+    "nitro": "^3.0.1-alpha.2",
+    "rollup": "^4.59.0",
+    "workflow": "^4.1.0-beta.60"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.17",
+    "tsx": "^4.7.1",
+    "typescript": "^5.8.3"
+  }
+}
