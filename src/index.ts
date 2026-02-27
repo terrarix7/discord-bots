@@ -88,11 +88,9 @@ app.post("/message", async (c) => {
 });
 
 app.get("/", async (c) => {
-  await startAllPersonalityWorkflows(DEFAULT_MESSAGE);
   return c.json({
     ok: true,
-    message: "Started 4 personality workflows with default prompt.",
-    prompt: DEFAULT_MESSAGE,
+    message: "Discord bot is running. Use /friends in Discord to trigger workflows.",
   });
 });
 
