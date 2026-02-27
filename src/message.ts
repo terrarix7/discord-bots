@@ -3,35 +3,31 @@ import { sleep } from "workflow";
 export const PERSONALITIES = [
   {
     id: "elon",
-    name: "Elon Musk",
     webhookEnv: "DISCORD_WEBHOOK_ELON",
     delay: "11s",
-    style:
-      "concise, first-principles, engineering-heavy, future-focused, occasionally bold claims",
+    systemPrompt:
+      "Write like a sharp engineering founder. Focus on first principles, speed, and ambitious execution. Offer practical next steps, not motivational fluff.",
   },
   {
     id: "naval",
-    name: "Naval Ravikant",
     webhookEnv: "DISCORD_WEBHOOK_NAVAL",
     delay: "24s",
-    style:
-      "calm, reflective, leverage-focused, short aphoristic sentences with practical wisdom",
+    systemPrompt:
+      "Write like a calm philosopher-operator. Prioritize leverage, clarity, and peace of mind. Keep the tone grounded and practical, with one strong mental model.",
   },
   {
     id: "jobs",
-    name: "Steve Jobs",
     webhookEnv: "DISCORD_WEBHOOK_JOBS",
     delay: "38s",
-    style:
-      "product-minded, taste-oriented, focused on simplicity, craft, and meaningful experiences",
+    systemPrompt:
+      "Write like a product visionary with taste. Emphasize simplicity, focus, craftsmanship, and doing fewer things better. Be direct and decisive.",
   },
   {
     id: "mrbeast",
-    name: "MrBeast",
     webhookEnv: "DISCORD_WEBHOOK_MRBEAST",
     delay: "52s",
-    style:
-      "high-energy, challenge-oriented, action-first, social and content-creation spin",
+    systemPrompt:
+      "Write like an energetic creator who loves action and momentum. Suggest fun, social, challenge-based ideas that are realistic to start tomorrow.",
   },
 ] as const;
 
@@ -47,10 +43,15 @@ export async function handleDiscordMessage(
 
   const personality = getPersonality(personalityId);
   const webhookUrl = process.env[personality.webhookEnv];
+  const replyLengthInstruction = getReplyLengthInstruction(incomingMessage);
 
   await sleep(personality.delay);
-  const generated = await generateReply(incomingMessage, personality.name, personality.style);
-  await sendToDiscord(webhookUrl, personality.name, incomingMessage, generated);
+  const generated = await generateReply(
+    incomingMessage,
+    personality.systemPrompt,
+    replyLengthInstruction,
+  );
+  await sendToDiscord(webhookUrl, generated);
 
   return { status: "sent", personality: personality.id };
 }
@@ -65,8 +66,8 @@ function getPersonality(personalityId: PersonalityId) {
 
 async function generateReply(
   incomingMessage: string,
-  personalityName: string,
-  style: string,
+  personalitySystemPrompt: string,
+  replyLengthInstruction: string,
 ) {
   "use step";
 
@@ -88,14 +89,16 @@ async function generateReply(
         {
           role: "system",
           content:
-            `You are writing a short response in a style inspired by ${personalityName}. ` +
-            `Do not claim to be the real person. Keep it practical and specific. Style: ${style}.`,
+            `${personalitySystemPrompt}\n` +
+            "Never claim to be the real public figure. Write as a normal Discord user, natural and conversational.\n" +
+            "No labels, no headings, no 'Prompt:', no stage directions.",
         },
         {
           role: "user",
           content:
             `User message: "${incomingMessage}"\n` +
-            "Reply in 4-7 sentences, with concrete suggestions for tomorrow.",
+            `${replyLengthInstruction}\n` +
+            "Give concrete suggestions the user can actually do tomorrow.",
         },
       ],
     }),
@@ -121,14 +124,12 @@ async function generateReply(
 
 async function sendToDiscord(
   webhookUrl: string | undefined,
-  personalityName: string,
-  incomingMessage: string,
   generatedReply: string,
 ) {
   "use step";
 
   if (!webhookUrl) {
-    throw new Error(`Missing webhook URL for ${personalityName}`);
+    throw new Error("Missing webhook URL");
   }
 
   const response = await fetch(webhookUrl, {
@@ -137,10 +138,7 @@ async function sendToDiscord(
       "content-type": "application/json",
     },
     body: JSON.stringify({
-      content:
-        `**${personalityName} (inspired)**\n` +
-        `Prompt: ${incomingMessage}\n\n` +
-        generatedReply,
+      content: generatedReply,
     }),
   });
 
@@ -150,4 +148,16 @@ async function sendToDiscord(
       `Discord webhook request failed (${response.status}): ${text}`,
     );
   }
+}
+
+function getReplyLengthInstruction(incomingMessage: string) {
+  const messageLength = incomingMessage.trim().length;
+  const hasComplexCues = /(why|how|career|relationship|anxious|stuck|depressed|confused|plan|strategy|long[- ]term)/i
+    .test(incomingMessage);
+
+  if (messageLength > 180 || hasComplexCues) {
+    return "Reply with 5-8 sentences or two short paragraphs.";
+  }
+
+  return "Reply with 2-4 concise sentences.";
 }
