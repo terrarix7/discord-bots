@@ -8,18 +8,14 @@ import {
   isDiscordPingInteraction,
   verifyDiscordRequest,
 } from "./discord.js";
-import { handleDiscordMessage, PERSONALITIES } from "./message.js";
+import { handleMasterDiscordMessage } from "./message.js";
 
 const app = new Hono();
 const DEFAULT_MESSAGE = "I dont have any plans for tomorrow, what should I do";
 const DISCORD_COMMAND_NAME = "friends";
 
-async function startAllPersonalityWorkflows(message: string) {
-  await Promise.all(
-    PERSONALITIES.map((personality) =>
-      start(handleDiscordMessage, [message, personality.id]),
-    ),
-  );
+async function startMasterWorkflow(message: string) {
+  await start(handleMasterDiscordMessage, [message]);
 }
 
 app.post("/discord/interactions", async (c) => {
@@ -63,10 +59,10 @@ app.post("/discord/interactions", async (c) => {
   }
 
   const prompt = extractPromptFromInteraction(interactionBody) ?? DEFAULT_MESSAGE;
-  await startAllPersonalityWorkflows(prompt);
+  await startMasterWorkflow(prompt);
   return c.json(
     discordEphemeralMessage(
-      "Queued 4 personalities. Replies will arrive in about 1 minute.",
+      "Queued 4 personalities. Replies will arrive over ~30 seconds.",
     ),
     200,
   );
@@ -79,10 +75,10 @@ app.post("/message", async (c) => {
       ? body.message.trim()
       : DEFAULT_MESSAGE;
 
-  await startAllPersonalityWorkflows(incomingMessage);
+  await startMasterWorkflow(incomingMessage);
   return c.json({
     ok: true,
-    message: "Started 4 personality workflows. Responses will arrive within ~1 minute.",
+    message: "Started master workflow. Responses will arrive over ~30 seconds.",
     prompt: incomingMessage,
   });
 });
